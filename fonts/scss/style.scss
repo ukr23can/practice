@@ -1,0 +1,73 @@
+@use "sass:math";
+@use "_reset.scss";
+@use "_iconfont.scss";
+@use "_colors.scss" as *;
+@use "_mixins.scss" as *;
+
+body {
+	font-family: "Poppins", sans-serif;
+	@include typography();
+	color: $grey6;
+}
+
+[class*="__container"] {
+	max-width: toRem($containerWidth);
+	padding-inline: toRem(math.div($containerPadding, 2));
+	margin: 0 auto;
+}
+
+
+.link {
+	font-size: 20px;
+}
+
+.link--icon-eye {}
+
+.link--icon-facebook {}
+
+.link--icon-heart {}
+
+.link--icon-insta {}
+
+.link--icon-link {}
+
+.link--icon-pinterest {}
+
+
+.link {}
+
+.link--icon-twitter {}
+
+.link--icon-facebook1 {}
+
+.link--icon-hydra {}
+
+.link--icon-instagram-2 {}
+
+.link--icon-linkedin {}
+
+.link--icon-Location-Icon {}
+
+.link--icon-logo {}
+
+.link--icon-long-arrow {}
+
+.link--icon-mail {}
+
+.link--icon-phone-call {}
+
+.link--icon-pinterest1 {}
+
+.link--icon-twitter1 {}
+
+.link--icon-youtube {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	color: red;
+	font-size: 26px;
+	// &::before {
+	// 	content: "";
+	// 	color: green;
+	// }
+}

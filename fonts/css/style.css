@@ -1,0 +1,224 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*::before,
+*::after {
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: middle;
+  max-width: 100%;
+}
+
+html,
+body {
+  line-height: 1;
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+/* FORM */
+input,
+button,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+input,
+textarea {
+  width: 100%;
+}
+
+button,
+select,
+option {
+  cursor: pointer;
+}
+
+input[type=text],
+input[type=email],
+input[type=tel],
+textarea {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+label {
+  display: block;
+}
+
+@font-face {
+  font-family: "iconfont";
+  src: url("../fonts/iconfont.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+[class*="--icon-"] {
+  content: "";
+  font-family: "iconfont" !important;
+  speak: never;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class*="--icon-eye"]::before {
+  content: "\e900";
+}
+
+[class*="--icon-facebook"]::before {
+  content: "\e901";
+  color: #4d4d4d;
+}
+
+[class*="--icon-heart"]::before {
+  content: "\e902";
+  color: #4d4d4d;
+}
+
+[class*="--icon-insta"]::before {
+  content: "\e903";
+  color: #4d4d4d;
+}
+
+[class*="--icon-link"]::before {
+  content: "\e904";
+  color: #4d4d4d;
+}
+
+[class*="--icon-pinterest"]::before {
+  content: "\e905";
+  color: #4d4d4d;
+}
+
+[class*="--icon-twitter"]::before {
+  content: "\e906";
+  color: #4d4d4d;
+}
+
+[class*="--icon-facebook1"]::before {
+  content: "\e907";
+  color: #4d4d4d;
+}
+
+[class*="--icon-hydra"]::before {
+  content: "\e908";
+}
+
+[class*="--icon-instagram-2"]::before {
+  content: "\e909";
+}
+
+[class*="--icon-linkedin"]::before {
+  content: "\e90a";
+}
+
+[class*="--icon-Location-Icon"]::before {
+  content: "\e90b";
+}
+
+[class*="--icon-logo"]::before {
+  content: "\e90c";
+}
+
+[class*="--icon-long-arrow"]::before {
+  content: "\e90d";
+}
+
+[class*="--icon-mail"]::before {
+  content: "\e90e";
+}
+
+[class*="--icon-phone-call"]::before {
+  content: "\e90f";
+}
+
+[class*="--icon-pinterest1"]::before {
+  content: "\e910";
+}
+
+[class*="--icon-twitter1"]::before {
+  content: "\e911";
+}
+
+[class*="--icon-youtube"]::before {
+  content: "\e912";
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #666;
+}
+@media (min-width: 84.375em) {
+  body {
+    font-size: 14px;
+  }
+}
+@media (min-width: 20em) and (max-width: 84.375em) {
+  body {
+    font-size: clamp( 14px , 14px  +  0vw , 14px );
+  }
+}
+@media (max-width: 20em) {
+  body {
+    font-size: 14px;
+  }
+}
+
+[class*=__container] {
+  max-width: 84.375rem;
+  padding-inline: 0.9375rem;
+  margin: 0 auto;
+}
+
+.link {
+  font-size: 20px;
+}
+
+.link--icon-youtube {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  color: red;
+  font-size: 26px;
+}

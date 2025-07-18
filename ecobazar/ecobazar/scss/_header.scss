@@ -1,0 +1,256 @@
+@use "_colors.scss" as *;
+@use "_mixins.scss" as *;
+
+.header {	
+
+	// .header__top
+	&__top {
+		border: 1px solid #e6e6e6;
+	}
+}
+
+.top-header {
+	@include typography("T",400);
+	// .top-header__container
+	&__container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: toRem(15);
+		flex-wrap: wrap;
+		padding-block: toRem(13);
+	}
+
+	// .top-header__location
+	&__location {
+		
+	}
+
+	// .top-header__link-location
+	&__link-location {
+		display: flex;
+		align-items: center;
+		gap: toRem(8);
+		transition: color 0.3s;
+
+		@media (any-hover: hover) and (any-pointer: fine) {
+			&:hover {
+				color: $successDark;
+			}
+		}
+	}
+
+	// .top-header__link-location--icon-location
+	&__link-location--icon-location {
+
+		&::before {
+			content: "";
+			background: url("../img/icons/location.svg") 0 0 / 100% no-repeat;
+			width: toRem(15);
+			height: toRem(18);
+			flex-shrink: 0;
+	}
+
+	// .top-header__actions
+	&__actions {
+		display: flex;
+		align-items: center;
+	}
+}
+
+.actions-top-header {
+	display: flex;
+	align-items: center;
+	gap: toRem(20);
+	// .actions-top-header__lang-currency
+	&__lang-currency {
+		position: relative;
+		&::after {
+			// content: "";
+			// width: toRem(1);
+			// height: 100%;
+			// background-color: #E6E6E6;
+			// padding-left: toRem(20);
+		}
+	}
+
+	// .actions-top-header__auth
+	&__auth {}
+}
+
+.lang-currency {
+	display: flex;
+	align-items: center;
+	gap: toRem(20);
+	color: $grey6;
+	&::after {
+		content: "";
+		width: toRem(1);
+		height: toRem(15);
+		background-color: #E6E6E6;
+	}
+	// .lang-currency__element
+	&__element {
+		position: relative;
+		&::after {
+			content: "";
+			background: url("../img/icons/chevron.svg")0 0 / 100% no-repeat;
+			width: toRem(7);
+			height: toRem(4);
+			position: absolute;
+			right: 0;
+			top: 50%;
+			translate: 0 -50%;
+			font-size: toRem(4.5);
+			pointer-events: none;
+		}
+	}
+
+	// .lang-currency__element--icon-chevron
+	&__element--icon-chevron {}
+
+	// .lang-currency__select
+	&__select {
+		color: $grey6;
+		appearance: none;
+		padding-right: toRem(10.5);
+	}
+
+	// .lang-currency__item
+	&__item {}
+}
+
+.auth-top-header {
+
+	// .auth-top-header__link
+	&__link {
+
+		@media (any-hover: hover) and (any-pointer: fine) {
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+}
+}
+
+
+
+.header {
+
+	// .header__body
+	&__body {}
+}
+
+.body-header {
+
+	// .body-header__container
+	&__container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: toRem(10);
+	}
+
+	// .body-header__logo
+	&__logo {
+		display: flex;
+		align-items: center;
+		gap: toRem(8);
+	}
+
+	// .body-header__search
+	&__search {
+		display: flex;
+		align-items: center;
+	}
+
+	// .body-header__actions
+	&__actions {
+		display: flex;
+		align-items: center;
+	}
+}
+
+.logo-header {
+
+	// .logo-header__icon
+	&__icon {}
+
+	// .logo-header__text
+	&__text {
+		color: $grey9;
+		font-size: toRem(32);
+		font-weight: 500;
+	}
+}
+
+.search-header {
+
+	// .search-header__input
+	&__input {}
+
+	// .search-header__button
+	&__button {}
+}
+
+.search-header--icon-search {}
+
+.actions-header {
+	display: flex;
+	align-items: center;
+	gap: toRem(17.4);
+
+	// .actions-header__favorite
+	&__favorite {
+		display: flex;
+		gap: toRem(17.4);
+		color: $grey9;
+		transition: color 0.3s;
+		&::before {
+			@include typography("XXL");
+		}
+			&:not(:last-child) {
+				&::after {
+					content: "";
+					width: toRem(1);
+					height: toRem(24);
+					background-color: $grey2;
+				}
+			}
+	}
+
+	// .actions-header__favorite--icon-favorite
+	&__favorite--icon-favorite {}
+
+	// .actions-header__cart
+	&__cart {}
+}
+
+.cart-header {
+
+	// .cart-header__icon
+	&__icon {}
+
+	// .cart-header__icon-basket
+	&__icon-basket {}
+
+	// .cart-header__body
+	&__body {
+		display: flex;
+		flex-direction: column;
+		gap: toRem(7);
+	}
+
+	// .cart-header__label
+	&__label {
+		color: $grey7;
+		@include typography("XT")
+	}
+
+	// .cart-header__value
+	&__value {
+		color: $grey9;
+		font-weight: 500;
+	}
+}
